@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0d1020" />
+    <title>Study Pocket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark">✦</span><span>Study Pocket</span></div>
+        <button class="profile-button" id="profileButton" aria-label="Профиль"><span id="profileAvatar">У</span></button>
+      </header>
+
+      <main id="screen" class="screen"></main>
+
+      <nav class="bottom-nav" aria-label="Главная навигация">
+        <button class="nav-item active" data-route="home"><span>⌂</span><small>Главная</small></button>
+        <button class="nav-item" data-route="subjects"><span>▦</span><small>Предметы</small></button>
+        <button class="nav-item" data-route="saved"><span>♡</span><small>Сохранённое</small></button>
+        <button class="nav-item" data-route="progress"><span>◔</span><small>Прогресс</small></button>
+      </nav>
+    </div>
+    <div id="toast" class="toast" role="status"></div>
+    <script src="./content.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
